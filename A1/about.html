@@ -14,7 +14,8 @@
     .headers{
       margin: 0;
       box-sizing: content-box;
-      width: 100%;
+      padding: 0 0;
+      width: auto;
       height: 70px;
       display: flex;
       align-items: center;
@@ -37,32 +38,55 @@
       color:white;
     }
     .footers{
-      position: absolute;
+      position: relative;
       margin: 0;
       box-sizing: content-box;
       bottom: 0; 
       max-width: 100%;
       width: 100%;
-      height: 70px;
+      height: 48px;
+      margin-top: -48px;
       background-color: #333333;
       display: flex;
       text-align: center; 
     }
+    .center {
+      border-radius: 50%;
+      display :block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 120px;
+      object-fit: cover;
+    }
+    .middle{
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
   </style>
 </head>
 
-<header class="no-margine">
-  <div id="header-main", class="headers">
-    <span><b class="header-main">Home</b></span> 
-    <span class="header-not-main"> About </span>
-    <span class="header-not-main"> Contact </span>
-  </div>  
-</header>
-<body>
-</body>
-<footer class="no-margine">
-  <div id="footers", class="footers">
-    <p style="color: #ffffff; margin:auto">Copyright-2023 by zhaoyi61</p>
-  </div>
-</footer>
+<body style="min-height: 100%">
+  <header class="no-margine"> 
+      <div id="header-main", class="headers">
+        <span><b class="header-main">Home</b></span> 
+        <span class="header-not-main"> About </span>
+        <span class="header-not-main"> Contact </span>
+      </div>  
+  </header>
+  <main style="height: 100%; margin: 0%; padding: 0%; padding-bottom: 48px;">
+    <img src="https://estnn.com/wp-content/uploads/2019/03/Maybe-1.jpg"width="200" height="200" class="center" alt="maybe">
+      <div class="middle">
+        <p style="font-size: 47px; font-weight: 700; line-height: 57px; position: relative;">Hi, I'm Yifan!</p>
+      </div>
+    <div class="middle">
+      <p>I am a student in University of Toronto</p>
+    </div>
+  </main>
+  <footer class="no-margine">
+    <div id="footers", class="footers">
+      <p style="color: #ffffff; margin:auto">Copyright-2023 by zhaoyi61</p>
+    </div>
+  </footer>  
+</body>  
 </html>
