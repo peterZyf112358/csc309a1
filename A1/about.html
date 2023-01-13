@@ -5,24 +5,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSC309 A1 - About</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .no-margine{
+      margin-top: -8px;
+      margin-left: -8px;
+      margin-right:-8px;
+    }
+    .headers{
+      margin: 0;
+      box-sizing: content-box;
+      width: 100%;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      background-color: #333333; 
+    }
+    .header-not-main{
+      color:#00b8d4; 
+      text-align: left;
+      margin: 1rem
+    }
+    .header-main{
+      color:#B2F5EA; 
+      text-align: left; 
+      margin: 1rem;
+    }
+    .header-main:hover{
+      color: white;
+    }
+    .header-not-main:hover{
+      color:white;
+    }
+    .footers{
+      position: absolute;
+      margin: 0;
+      box-sizing: content-box;
+      bottom: 0; 
+      max-width: 100%;
+      width: 100%;
+      height: 70px;
+      background-color: #333333;
+      display: flex;
+      text-align: center; 
+    }
+  </style>
 </head>
 
-<header>
-  <div id="header-main",  style="box-sizing: content-box;width: 100%;height: 70px;display: flex; align-items: center;background-color: #333333; ">
-    <a><b style="color:#B2F5EA; text-align: left; margin: 1rem">Home</b></a> 
-    <a style="color:#00b8d4; text-align: left; margin: 1rem"> About </a>
-    <a style="color:#00b8d4; text-align: left; margin: 1rem"> Contact </a>
+<header class="no-margine">
+  <div id="header-main", class="headers">
+    <span><b class="header-main">Home</b></span> 
+    <span class="header-not-main"> About </span>
+    <span class="header-not-main"> Contact </span>
   </div>  
 </header>
 <body>
-  <div>
-    <h1 >hello</h1>
-  </div>
 </body>
-<footer>
-  <div id="footer-main", style="box-sizing: content-box;width: 100%;height: 70px;
-  background-color: #333333; display: flex; align-items: center; text-align: center; ">
-    <p style="color: #ffffff; margin:auto">Copyright-2023 by mishu512</p>
+<footer class="no-margine">
+  <div id="footers", class="footers">
+    <p style="color: #ffffff; margin:auto">Copyright-2023 by zhaoyi61</p>
   </div>
 </footer>
 </html>
