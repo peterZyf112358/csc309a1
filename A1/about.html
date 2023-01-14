@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="height: 100%;">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,11 @@
   <style>
     .no-margine{
       margin-top: -8px;
+      margin-left: -8px;
+      margin-right:-8px;
+    }
+    .no-margine-bot{
+      margin-bottom: -8px;
       margin-left: -8px;
       margin-right:-8px;
     }
@@ -66,7 +71,8 @@
   </style>
 </head>
 
-<body style="min-height: 100%">
+<body style="height:100%">
+  <div style="min-height:100%;">
   <header class="no-margine"> 
       <div id="header-main", class="headers">
         <span><b class="header-main">Home</b></span> 
@@ -74,7 +80,7 @@
         <span class="header-not-main"> Contact </span>
       </div>  
   </header>
-  <main style="height: 100%; margin: 0%; padding: 0%; padding-bottom: 48px;">
+  <main style="height: 100%; margin-bottom: -48px;">
     <img src="https://estnn.com/wp-content/uploads/2019/03/Maybe-1.jpg"width="200" height="200" class="center" alt="maybe">
       <div class="middle">
         <p style="font-size: 47px; font-weight: 700; line-height: 57px; position: relative;">Hi, I'm Yifan!</p>
@@ -83,10 +89,12 @@
       <p>I am a student in University of Toronto</p>
     </div>
   </main>
-  <footer class="no-margine">
+  </div>
+  <footer class="no-margine-bot">
     <div id="footers", class="footers">
       <p style="color: #ffffff; margin:auto">Copyright-2023 by zhaoyi61</p>
     </div>
-  </footer>  
+  </footer>
+    
 </body>  
 </html>
