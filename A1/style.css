@@ -18,15 +18,31 @@
     align-items: center;
     background-color: #333333; 
   }
+  a:link{
+    text-decoration: none; 
+  }
+  a:hover{
+    color: white;
+    text-decoration: none;
+  }
+  a:visited{
+    text-decoration: none;
+  }
+  a:active{
+    text-decoration: none;
+  }
   .header-not-main{
     color:#00b8d4; 
     text-align: left;
     margin: 1rem
   }
   .header-main{
+    font-weight:bold;
     color:#B2F5EA; 
     text-align: left; 
     margin: 1rem;
+    text
+
   }
   .header-main:hover{
     color: white;
