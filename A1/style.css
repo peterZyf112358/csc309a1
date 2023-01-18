@@ -140,7 +140,15 @@
     cursor: pointer;
   }
   .pdf{
-    width: 100%;
+    width: 100vw;
     max-width: 720px;
     height: 60vh;
+  }
+  .main-page{
+    height: 100%;
+    margin-top: 128px; 
+    margin-bottom: 128px; 
+    justify-content: center; 
+    display:flex; 
+    flex-direction: column
   }
