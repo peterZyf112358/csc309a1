@@ -2,8 +2,10 @@
     margin-top: -8px;
     margin-left: -8px;
     margin-right:-8px;
+    margin-bottom: 128px;
   }
   .no-margine-bot{
+    margin-top: 128px;
     margin-bottom: -8px;
     margin-left: -8px;
     margin-right:-8px;
@@ -106,7 +108,7 @@
     margin-top: -30px;
   }
   .greeting{
-    font-size: 47px; 
+    font-size: 47px;
     font-weight: 700; 
     line-height: 57px; 
     position: relative; 
@@ -121,6 +123,7 @@
     line-height: 55.67px; 
     position: relative; 
     margin-top:auto;
+    margin-bottom: 0px;
   }
   .message{
     font-family: "Inter";
@@ -128,7 +131,6 @@
     font-size: 18px;
     line-height: 21.78px;
     position: relative;
-    margin-top: -34px;
   }
   details{
     box-sizing: border-box;
@@ -149,8 +151,6 @@
   }
   .main-page{
     height: 100%;
-    margin-top: 128px; 
-    margin-bottom: 128px; 
     justify-content: center; 
     display:flex; 
     flex-direction: column
@@ -167,24 +167,60 @@
     object-fit: cover;
   }
   .email{
+    font-family: 'Times New Roman';
     font-size: 27px; 
     font-weight: 700; 
     line-height: 33px; 
     position: relative; 
+    
     color: #00e;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
   }
   .input_email{
+    
+    height: 100vh;
+    width: 100vw;
     margin-top: 10px;
     box-sizing: border-box;
-    height: 45.59px;
-    width: 642.59375px;
+    max-height: 45.59px;
+    max-width: 642.59375px;
     border-radius: 3px;
     background: #FFFFFF;
     border: 1px solid #DDDDDD;
     border-radius: 3px;
+    display: inline-block;
+  }
+  .input_attachment_box{
+    height: 100vh;
+    width: 100vw;
+    margin-top: 10px;
+    box-sizing: border-box;
+    max-height: 45.59px;
+    max-width: 642.59375px;
+    border: 1px solid #DDDDDD;
+    border-radius: 3px;
+    display: inline-block;
+    text-align: left;
+    padding: 10px;
+    background-color: transparent;
+  }
+  .input_attachment{
+    max-width: 180px;
+  }
+  .input_feedback{
+    height: 100vh;
+    width: 100vw;
+    max-height: 111.59px;
+    max-width: 642.59375px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 3px;
+    display: inline-block;
   }
   .input_name{
     font-family: inter;
@@ -195,3 +231,38 @@
     margin-right: 10px;
     text-align: right;
   }
+  label{
+    width:100px;
+    display:inline-block;
+  }
+  @media only screen and (max-width: 200px){
+    .greeting{
+      font-size: 20vw;
+    }
+    .intro{
+      font-size:10vw;
+    }
+    .button1{
+      width:100vw;
+    }
+    .footers{
+      overflow: hidden; 
+    }
+    .headers{
+      overflow: hidden;
+    }
+    .title{
+      font-size: 20vw;
+      line-height: normal;
+    }
+    .message{
+      font-size: 10vw;
+    }
+  }
+  @media only screen and (max-width: 720px){
+    .pdf{
+      width: 100%;
+      max-width: 720px;
+    }
+  }
+  
