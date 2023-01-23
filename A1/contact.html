@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="height: 100%; background-color:#BBBBBB;">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,7 @@
   
 </head>
 <body>
-  <div style="min-height: 100vh;  position: relative;">
+  <div class="main-body">
   <header class="no-margine"> 
       <div id="header-main", class="headers">
         <span><a class="header-not-main" href="index.html">Home</a></span> 
@@ -18,21 +18,21 @@
     
   </header>
   <main class="main-page">
-    <img src="/selfy.jpg"width="200" height="200" class="center" alt="selfy">
-    <div class="greeting">Yifan</div>
+    <img src="selfy.jpg"width="200" height="200" alt="selfy">
+    <div class="greeting">Yifan Zhao</div>
     <div class="email">
       <a id="sendEmail"  href="mailto:peter.yifan.zhao@gmail.com?subject=Bug Found&body=I found the following bug on your website" > peter.yifan.zhao@gmail.com </a> 
     </div>
     
-    <form action="https://csc309.teach.cs.toronto.edu/a1/submit/" method="post" class="middle" target="_blank">
-      <table class="middle">
+    <form action="https://csc309.teach.cs.toronto.edu/a1/submit/" method="post" target="_blank">
+      <table>
       <tr>
       <td><label for="email" class="input_name">Your Email:</label></td>
       <td><input type="email" id="email" name="email" class="input_email" required></td>
       </tr>
       <tr>
       <td><label for="feedback" class="input_name">Feedback:</label></td>
-      <td><input type="text" id="feedback" name="feedback" class="input_feedback" required></td>
+      <td><input type="text" id="feedback" name="feedback" class="input_feedback" placeholder="Enter your feedback here" required></td>
       </tr>
       <tr>
       <td><label for="attachments" class="input_name">Attachment:</label></td>
@@ -41,26 +41,28 @@
       </tr>
       <tr>
         <td>
-        <input name="content" type="checkbox" style="transform: scale(1.5);" required>
+        <input name="content" id="content" type="checkbox" required>
         </td>
-        <td style="text-align: left;">
+        <td class="a-left">
           <span>You aggre to receive emails from me</span>
         </td>
       </tr>
       <tr>
         <td>
         </td>
-        <td  style="text-align: left;">
-           <button class="button1" type="submit" style="width: 133.78px;"> Send Feedback </button></td></tr>
+          <td class="a-left">
+           <button class="button1" type="submit"> Send Feedback </button>
+          </td>
+        </tr>
           
            
       </table>
       
     </form>
   </main>
-  <footer class="no-margine-bot footers">
+  <footer class="no-margine-bot">
     <div id="footers" class="footer-text">
-      <p style="color: #ffffff; margin:auto">Copyright-2023 by zhaoyi61</p>
+      <p>Copyright-2023 by zhaoyi61.</p>
     </div>
   </footer>
   </div>

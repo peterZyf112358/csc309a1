@@ -1,3 +1,16 @@
+body{
+  background-color: #BBBBBB;
+}
+#content{
+  transform: scale(1.5)
+}
+.main-body{
+  min-height: 100vh; 
+  position: relative;
+}
+footer p{
+  color: #ffffff;
+}
 .no-margine{
     margin-top: -8px;
     margin-left: -8px;
@@ -49,8 +62,7 @@
   .header-not-main:hover{
     color:white;
   }
-  .footers{
-    display: flex;
+  footer{
     position: absolute;
     bottom: 0;
     left:0;
@@ -70,6 +82,11 @@
     margin-right: auto;
     margin-top: auto;
     object-fit: cover;
+  }
+  form{
+    padding: 0 0.5rem;
+    margin: 0 0.5rem;
+    position: relative;
   }
   .middle{
     margin-left: auto;
@@ -124,12 +141,23 @@
     margin-top:auto;
     margin-bottom: 0px;
   }
-  .message{
+  .message1{
     font-family: "Inter";
     font-weight: 400;
     font-size: 18px;
     line-height: 21.78px;
     position: relative;
+  }
+  .message2{
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.78px;
+    padding: 0.5rem;
+    position: relative;
+  }
+  table{
+    width: 100%;
   }
   details{
     box-sizing: border-box;
@@ -149,9 +177,11 @@
     height: 60vh;
   }
   .main-page{
+    position: relative;
     display:flex; 
     flex-direction: column;
-    padding-bottom: 128px;
+    align-items: center;
+    padding-bottom: 176px;
   }  
   img{
     max-width: 100%;
@@ -206,6 +236,12 @@
   .input_attachment{
     max-width: 180px;
   }
+  .a-left{
+    text-align: left;
+  }
+  td button{
+    width: 133.78px !important;
+  }
   .input_feedback{
     height: 100vh;
     width: 100vw;
@@ -243,9 +279,7 @@
     .button1{
       width:100vw;
     }
-    .footers{
-      overflow: hidden; 
-    }
+
     .headers{
       overflow: hidden;
     }
@@ -256,6 +290,7 @@
     .message{
       font-size: 10vw;
     }
+    footer{overflow: hidden;}
   }
   @media only screen and (max-width: 720px){
     .pdf{
@@ -279,6 +314,5 @@
     input{
       overflow: hidden; 
     }
-    
   }
   
